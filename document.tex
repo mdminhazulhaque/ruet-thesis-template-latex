@@ -1,0 +1,63 @@
+\documentclass[12pt,a4paper,final]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{subfiles}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{appendix}
+
+\lstset{basicstyle=\ttfamily,breaklines=true}
+
+\usepackage[nottoc]{tocbibind}
+\renewcommand\bibname{References}
+\renewcommand{\baselinestretch}{1.5}
+
+\newcommand{\thesistitle}{Thesis Title}
+\newcommand{\thesissupervisor}{My Awesome Supervisor Name}
+\newcommand{\thesissupervisordesignation}{My Awesome Supervisor Designation}
+
+\newcommand{\authorname}{Md. Minhazul Haque}
+\newcommand{\authorroll}{103001}
+
+\newcommand{\dept}{Department of Computer Science \& Engineering}
+\newcommand{\ruet}{Rajshahi University of Engineering \& Technology}
+
+\usepackage[left=4.00cm,top=2.50cm,right=2.50cm,bottom=2.50cm]{geometry}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\subfile{chapters/i_title.tex}
+
+\pagenumbering{roman}
+\subfile{chapters/ii_acknowledgement.tex}
+\subfile{chapters/iii_certificate.tex}
+\subfile{chapters/iv_abstract.tex}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\pagenumbering{arabic}
+
+\subfile{chapters/1_introduction.tex}
+\subfile{chapters/2_background.tex}
+\subfile{chapters/3_implementation.tex}
+\subfile{chapters/4_performence_result.tex}
+\subfile{chapters/5_future_works.tex}
+\subfile{chapters/app_workspace.tex}
+\subfile{chapters/app_code_snippets.tex}
+
+\bibliographystyle{ieeetr}
+\bibliography{bibliography}
+
+\end{document}
