@@ -6,6 +6,7 @@ A boilerplate LaTeX template for writing B.Sc. Undergraduate Thesis under at RUE
 
 ## Features
 
-* *Moduler*: This template uses latex `subfiles` to split title page, acknowledgement page, certificate page, abstract page, chapters, and appendix into separate `tex` files.
+### Uses latex `subfiles` module to load title page, acknowledgement page, certificate page, abstract page, chapters, and appendix from separate `tex` files
+### IEEE styled bibliography from separate `bib` file
 
 ![Contents](doc/href.png)
