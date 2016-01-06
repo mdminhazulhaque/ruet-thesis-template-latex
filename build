@@ -10,24 +10,11 @@ die_if_no_exists()
     fi
 }
 
+die_if_no_exists texstudio
 die_if_no_exists latex
 die_if_no_exists pdflatex
 
-DOCNAME=document
+echo "Cleaning..."
+rm -f *.log *.aux *.dvi *.lof *.lot *.bit *.idx *.glo *.bbl *.ilg *.toc *.ind *.out *.blg *.synctex.gz
 
-if [ "$1" == "clean" ]
-then
-    rm -f *.log *.aux *.dvi *.lof *.lot *.bit *.idx *.glo *.bbl *.ilg *.toc *.ind *.out *.blg *.synctex.gz
-else
-    latex -src -interaction=nonstopmode $DOCNAME.tex > /dev/null
-    pdflatex -synctex=1 -interaction=nonstopmode $DOCNAME.tex > /dev/null
-    
-    if [ -f $DOCNAME.pdf ]
-    then
-        echo "Successfully generated $DOCNAME.pdf"
-        exit 0
-    else
-        echo "Failed to generat $DOCNAME.pdf"
-        exit 1
-    fi
-fi
+texstudio document.tex
