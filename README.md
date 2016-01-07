@@ -1,7 +1,5 @@
 # RUET Thesis Template LaTeX
 
-![Cover](doc/cover.png)
-
 A boilerplate LaTeX template for writing B.Sc. Undergraduate Thesis under at RUET.
 
 ## Features
@@ -11,11 +9,12 @@ A boilerplate LaTeX template for writing B.Sc. Undergraduate Thesis under at RUE
 
 ## Examples
 
-* Chapters, sections, and subsections
-* Single figure, multiple figure and captions
+* Demo chapters, sections, and subsections
+* Demo single figures, multiple figures and captions
 * Demo list items
 * Demo enumerated items
 * Demo tables
 * Demo equations
+
 
 ![Contents](doc/href.png)
