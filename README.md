@@ -18,4 +18,12 @@ A boilerplate LaTeX template for writing B.Sc. Undergraduate Thesis under at RUE
 * Demo tables
 * Demo equations
 
+## System Requirment
+
+Install TeXstudio to compile and view the LaTex project.
+
+* Linux: `apt-get install -y lyx texstudio texlive-extra-utils`
+* OS X: `brew cask install texstudio`
+* Windows: Download from `http://sourceforge.net/projects/texstudio/files/texstudio/`
+
 ![Contents](doc/href.png)
