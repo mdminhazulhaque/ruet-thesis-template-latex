@@ -26,4 +26,6 @@ Install TeXstudio to compile and view the LaTex project.
 * OS X: `brew cask install texstudio`
 * Windows: Download from `http://sourceforge.net/projects/texstudio/files/texstudio/`
 
-![Contents](doc/href.png)
+## Preview
+
+Download `document.pdf` and open with any PDF viewer or [click here](PREVIEW.md) to see the page previews.
